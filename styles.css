@@ -41,7 +41,7 @@ h2 {
     margin: 12px 24px;
     line-height: 24px;
     text-align: center;
-    justify-content: space-between;
+    justify-content:space-evenly;
 }
 
 .row div {
@@ -79,3 +79,26 @@ button {
 button:hover {
     box-shadow: 0 0 20px #caf0f8;
 }
+
+#myCarousel{
+    height: 300px;
+    color:white;
+}
+
+.mapBoxDetail{
+    color: white;
+    height: 250px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-image: url("https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8yNDk4NjkzMC9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTY3MzQ2ODIzOX0._2lVOvC8EBybLLxpMdisTBdWOE_4X0SKaNlna-8WBME/img.jpg?width=1245&quality=85&coordinates=0%2C0%2C0%2C0&height=700;")
+}
+
+
+.fontStyle{
+    color:white;
+    font-size: small; 
+}
+
