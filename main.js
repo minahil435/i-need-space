@@ -19,15 +19,18 @@ function ButtonClicked(){
             return Promise.reject(response);
         }
     }).then(function (data) {
+        
         longitute = data.features[0].center[0]
+        console.log(longitute)
         latitite = data.features[0].center[1]
+        console.log(latitite)
         getSatellite()
     })
 }
 
 function getSatellite(){
-    longitute="-34.9112212"
-    latitite="-57.9372988"
+    // longitute="-34.9112212"
+    // latitite="-57.9372988"
  let SatellitePassesAPI = "https://satellites.fly.dev/passes/" + norad.value + "?lat=" + longitute + "&lon=" + latitite + "&days=15&visible_only=true"
  fetch(SatellitePassesAPI).then(function (response) {
     if (response.ok) {
@@ -36,7 +39,7 @@ function getSatellite(){
         return Promise.reject(response);
     }
 }).then(function (data) {
-        
+        console.log(data)
         let i = 0
         for (const each of data ){ arrayTimes.push(each); displayData(i); i = i +1;}
 })} 
